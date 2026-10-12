@@ -1,4 +1,8 @@
-/* css styles */
-.navbar-dark, .quarto-title-banner {
-  background-color: #006DAE;
-}
+body { background: #f8fbfa; color: #263a40; }
+h1,h2,h3,.navbar-title { color: #075b68; }
+a { color: #006f80; }
+a:hover { color: #b54f34; }
+.navbar { background: #e5f2f0; }
+.quarto-title-banner { background: #e5f2f0; color: #075b68; }
+main { line-height: 1.75; }
+.table { font-size: .96rem; }
