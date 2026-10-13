@@ -1,14 +1,14 @@
 ---
-title: "ETC5523 Blog Assessment"
+title: "Stories behind the numbers"
 listing:
   contents: posts
   sort: "date desc"
   type: default
-  categories: true
+  fields: [date, title, description]
   sort-ui: false
   filter-ui: false
 page-layout: full
-title-block-banner: true
+body-classes: homepage
 ---
 
-
+Welcome. This site explores how research and data help us make sense of issues affecting everyday life. Start with the latest story below.

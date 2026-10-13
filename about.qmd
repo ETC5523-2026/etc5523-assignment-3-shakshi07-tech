@@ -1,13 +1,12 @@
 ---
 title: "About"
-image: profile.jpg
 about:
-  template: jolla
+  template: trestles
+  image: images/Profile.jpeg
   links:
     - icon: github
-      text: Github
-      href: https://github.com/etc5523-2022
-
+      text: GitHub
+      href: https://github.com/shakshi07-tech
 ---
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+I'm a Master's student in Business Analytics at Monash University. I'm interested in making complicated research easier to understand without losing the details that matter. This website shares data stories for readers who want clear explanations of the evidence behind public issues.

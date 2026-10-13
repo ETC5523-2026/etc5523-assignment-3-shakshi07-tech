@@ -1,0 +1,102 @@
+/* General website colours */
+body {
+  background: #f8fbfa;
+  color: #263a40;
+}
+
+/* Headings and website title */
+h1, h2, h3, .navbar-title {
+  color: #075b68;
+}
+
+/* Links */
+a {
+  color: #006f80;
+}
+
+a:hover {
+  color: #b54f34;
+}
+
+/* Navigation bar */
+.navbar {
+  background: #e5f2f0;
+}
+
+/* Title banner */
+.quarto-title-banner {
+  background: #e5f2f0;
+  color: #075b68;
+}
+
+/* Reading experience */
+main {
+  line-height: 1.75;
+}
+
+/* Tables */
+.table {
+  font-size: 0.96rem;
+}
+
+
+
+/* Animate the Data, Clearly navbar title */
+body.homepage .navbar-title {
+  display: inline-block;
+  animation: titleReveal 1.2s ease-out both;
+}
+
+/* Smooth fade-in with gentle upward movement */
+@keyframes titleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Accessibility: respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+  body.homepage .navbar-title {
+    animation: none;
+  }
+}
+
+/* Highlight the blog listing */
+body.homepage .quarto-listing .listing-item {
+body.homepage .quarto-listing .quarto-post,
+body.homepage .quarto-listing .listing-item {
+  background-color: #eaf5f2;
+  border-left: 4px solid #007c91;
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  transition: background-color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+/* Featured blog heading */
+body.homepage .quarto-listing .listing-title,
+body.homepage .quarto-listing .listing-title a {
+  color: #075b68 !important;
+  font-weight: 700;
+}
+
+/* Hover effect */
+body.homepage .quarto-listing .quarto-post:hover,
+body.homepage .quarto-listing .listing-item:hover {
+  background-color: #dcefeb;
+  box-shadow: 0 4px 14px rgba(7, 91, 104, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.homepage .quarto-listing .quarto-post,
+  body.homepage .quarto-listing .listing-item {
+    transition: none;
+  }
+}
