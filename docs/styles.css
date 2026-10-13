@@ -69,7 +69,9 @@ body.homepage .navbar-title {
 
 /* Highlight the blog listing */
 body.homepage .quarto-listing .listing-item {
-  background: #eaf5f2;
+body.homepage .quarto-listing .quarto-post,
+body.homepage .quarto-listing .listing-item {
+  background-color: #eaf5f2;
   border-left: 4px solid #007c91;
   border-radius: 8px;
   padding: 18px 22px;
@@ -78,26 +80,22 @@ body.homepage .quarto-listing .listing-item {
               box-shadow 0.2s ease;
 }
 
-/* Make the blog title prominent */
-body.homepage .quarto-listing .listing-title {
-  color: #075b68;
+/* Featured blog heading */
+body.homepage .quarto-listing .listing-title,
+body.homepage .quarto-listing .listing-title a {
+  color: #075b68 !important;
   font-weight: 700;
-  font-size: 1.3rem;
 }
 
-/* Add emphasis when the reader hovers */
+/* Hover effect */
+body.homepage .quarto-listing .quarto-post:hover,
 body.homepage .quarto-listing .listing-item:hover {
-  background: #dcefeb;
+  background-color: #dcefeb;
   box-shadow: 0 4px 14px rgba(7, 91, 104, 0.12);
 }
 
-/* Keep the post title teal when hovered */
-body.homepage .quarto-listing .listing-item:hover .listing-title {
-  color: #006f80;
-}
-
-/* Respect reduced-motion preferences */
 @media (prefers-reduced-motion: reduce) {
+  body.homepage .quarto-listing .quarto-post,
   body.homepage .quarto-listing .listing-item {
     transition: none;
   }
