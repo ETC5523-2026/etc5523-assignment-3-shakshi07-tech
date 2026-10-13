@@ -1,8 +1,68 @@
-body { background: #f8fbfa; color: #263a40; }
-h1,h2,h3,.navbar-title { color: #075b68; }
-a { color: #006f80; }
-a:hover { color: #b54f34; }
-.navbar { background: #e5f2f0; }
-.quarto-title-banner { background: #e5f2f0; color: #075b68; }
-main { line-height: 1.75; }
-.table { font-size: .96rem; }
+/* General website colours */
+body {
+  background: #f8fbfa;
+  color: #263a40;
+}
+
+/* Headings and website title */
+h1, h2, h3, .navbar-title {
+  color: #075b68;
+}
+
+/* Links */
+a {
+  color: #006f80;
+}
+
+a:hover {
+  color: #b54f34;
+}
+
+/* Navigation bar */
+.navbar {
+  background: #e5f2f0;
+}
+
+/* Title banner */
+.quarto-title-banner {
+  background: #e5f2f0;
+  color: #075b68;
+}
+
+/* Reading experience */
+main {
+  line-height: 1.75;
+}
+
+/* Tables */
+.table {
+  font-size: 0.96rem;
+}
+
+
+
+/* Animate the Data, Clearly navbar title */
+body.homepage .navbar-title {
+  display: inline-block;
+  animation: titleReveal 1.2s ease-out both;
+}
+
+/* Smooth fade-in with gentle upward movement */
+@keyframes titleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Accessibility: respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+  body.homepage .navbar-title {
+    animation: none;
+  }
+}

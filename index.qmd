@@ -8,6 +8,7 @@ listing:
   sort-ui: false
   filter-ui: false
 page-layout: full
+body-classes: homepage
 ---
 
 Welcome. This site explores how research and data help us make sense of issues affecting everyday life. Start with the latest story below.
