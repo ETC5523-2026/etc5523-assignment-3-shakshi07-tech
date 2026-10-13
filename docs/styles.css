@@ -66,3 +66,39 @@ body.homepage .navbar-title {
     animation: none;
   }
 }
+
+/* Highlight the blog listing */
+body.homepage .quarto-listing .listing-item {
+  background: #eaf5f2;
+  border-left: 4px solid #007c91;
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  transition: background-color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+/* Make the blog title prominent */
+body.homepage .quarto-listing .listing-title {
+  color: #075b68;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* Add emphasis when the reader hovers */
+body.homepage .quarto-listing .listing-item:hover {
+  background: #dcefeb;
+  box-shadow: 0 4px 14px rgba(7, 91, 104, 0.12);
+}
+
+/* Keep the post title teal when hovered */
+body.homepage .quarto-listing .listing-item:hover .listing-title {
+  color: #006f80;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  body.homepage .quarto-listing .listing-item {
+    transition: none;
+  }
+}
